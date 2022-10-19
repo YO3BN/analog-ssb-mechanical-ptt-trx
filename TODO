@@ -1,0 +1,8 @@
+-Add AGC circuit for receiver.
+-Add AGC cricuit for transmitter.
+-Move the audio potentiometer to the next amplifier stage (Q20).
+-AGC to read the audio voltage?
+-Redesign first audio stage Q16.
+-Not sure about the BFO mixer design - R14-R15 resistors.
+-Test if diodes in emitter of JFET IF amps will stabilise gain vs. VCC.
+
