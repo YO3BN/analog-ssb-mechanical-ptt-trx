@@ -6,3 +6,21 @@
 -Not sure about the BFO mixer design - R14-R15 resistors.
 -Test if diodes in emitter of JFET IF amps will stabilise gain vs. VCC.
 
+-The input impedance into cascode bjt+jfet stages are not stable with voltage
+ and are not 100% defined by R into the Gate - need to measure the complex
+ impedance for these stages.
+-The IF filter need buffers at input and output.
+-Correctly adapt the IF filter into the circuit by measuring i/o impedances.
+-Fix some footprints on the PCB.
+-Fix CV footprints on the PCB.
+-C51 really needed? seem to cut some high frequencies but when the volume is
+ set to maximum it tend to amplify high freq too much.
+-C35 / 470u must be replaced with 1000u low esr.
+-Connect Q7 and Q35 directly to +12V?
+-Replace isolation capacitors found between IF stages (10p, 5p6, etc) to
+ 100n + Xohms, because when changing IF from 10MHz to 10.7MHz, the gain
+ increases. Adding resistors + 100n will keep the gain stable.
+-Resonating tank from cascode bjt+jfet stages are composed by 10-30pF+9.7-11uH.
+ Also, the Q is too big?
+-IF amplifier stages tends to autooscillate when the gain is too big.
+
